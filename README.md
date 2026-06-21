@@ -1,73 +1,36 @@
-# React + TypeScript + Vite
+# AI Graph 📊 Dataset Extractor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, serverless, research-grade web application designed to convert visual representations of charts, plots, screenshots, scans, and PDFs into structured numeric datasets with high precision.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🎯 Core Features
 
-## React Compiler
+- 🧠 **Multimodal AI Vision OCR:** Powered by Gemini, the system automatically detects graphs, resolves axis bounds, labels, legends, and translates pixel positions into accurate numerical value points.
+- 📐 **Interactive Calibration Workbench:** Place manual calibration anchors (Origin, X-Max, Y-Max) and click directly on the graph image to digitize or adjust custom data coordinates dynamically.
+- 📈 **Research Analytics Panel:** Computes statistical summaries (Mean, Median, Standard Deviation), growth patterns (Net & Compound Annual Growth Rate - CAGR), Pearson correlation ($r$), and outputs linear regression best-fit equations ($y = mx + c$).
+- 💾 **Persistent Local History:** Retains your previous extraction records locally with a premium hover interaction system allowing direct downloads or deletion in one click.
+- 📥 **Direct Spreadsheet Exports:** Generate structured JSON data or direct CSV spreadsheets. Exports include the UTF-8 BOM prefix, rendering clean columns automatically in Microsoft Excel.
+- 🎨 **ServiceNow Kailani Style System:** Features a dark-mode glassmorphic interface built using modern CSS, glowing transitions, and micro-animations.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1. Installation
+Install the project dependencies:
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 2. Run the Development Server
+Launch the server locally:
+```bash
+npm run dev
 ```
+
+---
+
+## 🌐 Localhost Access URL
+Once the development server is running, access the application at:
+[http://localhost:5173/](http://localhost:5173/)
